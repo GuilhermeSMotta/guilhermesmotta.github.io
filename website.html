@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.png">
+        <title>Futuro da Computação</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Futuro da Computação</h1>
+        </header>
+        <nav class="stick">
+            <button type="button" class="accordion">Menu</button>
+            <div class="panel" style>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="twitter.png" alt="Icone do Twitter" style="width: 40px; height: 40px; background-color: darkgray; border-radius: 50%;">
+                            &nbsp;Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="github.png" alt="Icone do GitHub" style="width: 40px; height: 40px; background-color: darkgray; border-radius: 50%;">
+                            &nbsp;GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="linkedin.png" alt="Icone do LinkedIn" style="width: 40px; height: 40px; background-color: darkgray; border-radius: 50%;">
+                            &nbsp;LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+    
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight){
+                            panel.style.maxHeight = null;
+                        }
+                        else{
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                }
+            </script><!--Código para menu deslizante-->
+        </nav>
+        <div id="bgi"></div>
+        <main>
+            <h1 style="padding: 5px;">SBCs, o futuro da computação</h1>
+            <p class="text" style="padding-bottom: 9vw;">
+                <img src="lattepanda.jpg" alt="Imagem da placa Latte Panda" style="float: right; min-width: 30vmax; max-width: 10vmin; height: auto;">
+                <br>
+                &nbsp;&nbsp;<span style="font-weight: bold;">SBCs (Single Board Computer)</span> estão evoluindo rápidamente
+                e se tornando importantes componentes para sistemas IoT (Internet of Things),
+                devido aos seus processadores de arquitetura ARM (na maioria dos modelos)
+                e sua habilidade de conectar-se a internet.
+                Suas aplicações estão sendo cada vez mais frequentes em situações onde não
+                é necessario um grande poder de processamento para realizar sua tarefa
+                devido ao seu baixo custo e facilidade de programação.
+                Em geral, estes computadores utilizam o Linux for ARM como Sistema Operacional(SO),
+                mas muitos modelos podem utilizar outros, como o Windows 10 IoT e o Android.
+                <br> <br>
+                &nbsp;&nbsp;Suas maiores vantagens são que, os processadores ARM são desenvolvidos constantemente
+                devido sua popularidade em smartphones e tablets,
+                seu pequeno tamanho em relação a computadores convencionais,
+                suas possibilidades de customização de acordo com o uso,
+                como por exemplo a memória delas sendo de cartões SD que podem ser trocados,
+                e a pequena quantidade de energia necessaria para seu funcionamento.
+            </p>
+            <h2 style="text-align: center; padding: 10px;">Raspberry Pi</h2>
+            <blockquote cite="fonte da citação">
+                <p>
+                    &nbsp;Our mission is to put the power of computing
+                    and digital making into the hands of people all over the world.
+                    We do this so that more people are able to harness the power of computing
+                    and digital technologies for work,
+                    to solve problems that matter to them, and to express themselves creatively.
+                </p>
+                <p class="source">(<a href="https://www.raspberrypi.org/" style="color: blue;">Raspberry Pi Foundation</a>)</p>
+                <br> <br>
+                <p>
+                    &nbsp;&nbsp;Nossa missão é colocar o poder de computação
+                    e criação digital nas mãos de todas as pessoas do mundo.
+                    Nós fazemos isso para que mais pessoas possam usar o poder de computação
+                    e tecnoçogias digitais para trabalhar,
+                    para resolver os problemas que importam para eles(as),
+                    e se expressarem de forma criativa.
+                </p>
+                <p class="source">Traduzido por: MOTTA, Guilherme Silva, 2020</p>
+            </blockquote>
+            <p style="text-align: left; padding-bottom: 10vw;">
+                <img class="text-img" src="Raspberry-Pi-4-Model-B.jpg" alt="Imagem da placa Raspberry Pi 4 Model B">
+                <br>
+                &nbsp; A linha de SBCs mais popular é a Raspberry Pi por seus preços baixos e grande variedade de
+                escolhas, entre modelos com maior poder de processamento, menor tamanho, entre outras opções,
+                além de possuir uma enorme quantidade de projetos feitos por grandes empresas e pequenos desenvolvedores
+                que postam seus projetos para automação ou ajudar com outras coisas.
+                A fundação cria projetos para incentivar a criatividade,
+                o envolvimento com novas tecnologias
+                e o aprendizado de programação para pessoas de todas as idades,
+                com foco principal em crianças com o uso de programas simplificados em escolas de alguns países.
+                <br>
+                &nbsp; Os faixa de pinos presentes em seus produtos são pinos para criar circuitos elétricos que usam sensores
+                ou outros componentes eletrônicos para realizar tarefas automatizadas, como por exemplo,
+                um sistema que detecta a humidade e temperatura do ambiente e depois exibe as informações em uma tela.
+            </p>
+        </main>
+        <article style="padding-bottom: 10vh; padding-top: 20px;">
+            <h1>Modelos diferentes e populares de SBCs</h1>
+            <p style="padding-bottom: 20px;">
+                &nbsp; Além da Raspberry Pi, existem vários outros fabricantes que utilizam modelos similares
+                ou estilos próprios de placas,
+                abaixo segue uma lista de algumas placas populares para projetos.
+            </p>
+            <div>
+                <h2 style="text-align: center;">Asus Tinker Board</h2>
+                <p style="text-align: left; padding-bottom: 17vw;">
+                    <br>
+                    <img class="text-img" src="asus-tinker-board-r.jpg" alt="Imagem da placa Asus Tinker Board R">
+                    <br>
+                    &nbsp;&nbsp; A Tinker Board é uma placa de design semelhante ao da Raspberry Pi,
+                    mas com suas próprias diferenças,
+                    como a memória RAM localizada na parte inferior em dois módulos separados,
+                    icones na parte superior para indicação de elementos, e, em certos modelos,
+                    memória interna eMMC Flash que pode ser alternada para o cartão SD.
+                    <br>
+                <a href="https://www.asus.com/br/Single-Board-Computer/" style="color: blue;">[Link]</a>
+                <br>
+                </p>
+            </div>
+            <div>
+                <h2 style="text-align: center;">ODROID-XU4</h2>
+                <p style="padding-bottom: 5vw; text-align: left;">
+                    <br>
+                    <img class="text-img" src="odroid-xu4.png" alt="Imagem da placa Odroid X U 4" style="background-color: white;">
+                    <br>
+                    &nbsp;&nbsp; O ODROID-XU4 é uma placa poderosa e compacta que se tornou popular pelo seu processador Samsung
+                    Exynos de oito núcleos,
+                    conectores USB 3.0 e possibilidade de módulo eMMC para memória mais rápida.
+                    Bastante popular principalmente pelo seu desempenho em jogos, mas é necessário o uso de dissipador e ventoinha para manter a sua temperatura baixa
+                    e assim manter o desempenho.
+                    <br>
+                    <a href="https://www.hardkernel.com/product/" style="color: blue;">[Link]</a>
+                </p>
+            </div>
+            <div>
+                <h2 style="text-align: center;">LattePanda</h2>
+                <p>
+                    <br>
+                    <img class="text-img" src="lattepanda.jpg" alt="Imagem da placa Latte Panda">
+                    <br>
+                    &nbsp;&nbsp; LattePanda é uma placa que se destaca por possuir um processador Intel Atom,
+                    processador de arquitetura x86, e por isso é capaz de utilizar o Windows 10 como SO,
+                    que para muitos usuarios de SBC se torna mais simples para trabalhar
+                    em projetos devido a programas com maior compatibilidade com o SO (Visual Studio Code, por exemplo)
+                    ou projetos que requerem instruções mais avançadas, mas requer uma quantidade maior de energia para funcionar
+                    e em modelos com processadores mais poderosos requerem sistemas de resfriamento como dissipadores e ventoinhas.
+                    <br>
+                    <a href="https://www.lattepanda.com/" style="color: blue;">[Link]</a>
+                </p>
+            </div>
+        </article>
+        <footer>
+            <p>&copy;2020 - Guilherme S. Motta</p>
+        </footer>
+    </body>
+</html>
